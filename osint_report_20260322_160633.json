@@ -1,0 +1,159 @@
+{
+  "phone": "+79182469659",
+  "normalized": "+79182469659",
+  "timestamp": "2026-03-22T16:06:33.926184",
+  "basic_info": {
+    "phone": "+79182469659",
+    "operator": "MegaFon",
+    "operator_code": "918",
+    "country": "Russia",
+    "type": "Mobile"
+  },
+  "google_dorks": [
+    "\"+79182469659\"",
+    "\"+79182469659\"",
+    "\"+79182469659\" паспорт",
+    "\"+79182469659\" ИНН",
+    "\"+79182469659\" банк",
+    "\"+79182469659\" карта",
+    "\"+79182469659\" документы",
+    "\"+79182469659\" резюме",
+    "\"+79182469659\" контакт",
+    "site:avva.ru \"+79182469659\"",
+    "site:2gis.ru \"+79182469659\"",
+    "site:vk.com \"+79182469659\"",
+    "site:ok.ru \"+79182469659\"",
+    "site:hh.ru \"+79182469659\"",
+    "site:forums.moeginfo.com \"+79182469659\"",
+    "site:github.com \"+79182469659\"",
+    "\"+79182469659\" filetype:pdf",
+    "\"+79182469659\" filetype:docx",
+    "\"+79182469659\" filetype:xlsx"
+  ],
+  "social_media_links": {
+    "vkontakte": "https://vk.com/search?c[q]=%2B79182469659",
+    "odnoklassniki": "https://ok.ru/search?q=%2B79182469659",
+    "telegram": "https://t.me/username_bot - поиск по username",
+    "instagram": "https://www.instagram.com/",
+    "twitter": "https://twitter.com/search?q=%2B79182469659",
+    "whatsapp": "https://web.whatsapp.com/ - добавить номер",
+    "viber": "Viber Desktop - поиск по номеру",
+    "2gis": "https://2gis.ru/spb/search/%2B79182469659",
+    "yandex_people": "https://people.yandex.ru/ - поиск по ФИО"
+  },
+  "russian_sources": {
+    "rosreestr": {
+      "url": "https://www.rosreestr.ru/",
+      "data": "Реестр недвижимости",
+      "requires": "ФИО или ИНН"
+    },
+    "fns_egrul": {
+      "url": "https://egrul.nalog.ru/",
+      "data": "Реестр ИП и ООО",
+      "requires": "ИНН"
+    },
+    "2gis": {
+      "url": "https://2gis.ru/",
+      "data": "Справочник компаний и контактов"
+    },
+    "yandex_maps": {
+      "url": "https://yandex.ru/maps/",
+      "data": "Адреса и компании"
+    },
+    "avva_profiles": {
+      "url": "https://avva.ru/",
+      "data": "Публичные профили (ФИО, адреса, фото)"
+    },
+    "hh_ru": {
+      "url": "https://hh.ru/",
+      "data": "Резюме соискателей"
+    },
+    "superjob": {
+      "url": "https://superjob.ru/",
+      "data": "Резюме и контакты"
+    }
+  },
+  "api_endpoints": {
+    "ipqualityscore": {
+      "url": "https://ipqualityscore.com/api/json/phone",
+      "method": "GET",
+      "free_tier": "25 requests/month",
+      "data": [
+        "operator",
+        "valid",
+        "number_type"
+      ]
+    },
+    "numverify": {
+      "url": "https://numverify.com/api",
+      "method": "GET",
+      "free_tier": "100 requests/month",
+      "data": [
+        "country",
+        "carrier",
+        "line_type"
+      ]
+    },
+    "abstractapi_phonenumber": {
+      "url": "https://api.abstractapi.com/phonenumber",
+      "method": "GET",
+      "free_tier": "100 requests/month",
+      "data": [
+        "type",
+        "carrier",
+        "country"
+      ]
+    },
+    "vk_api": {
+      "url": "https://api.vk.com/method/",
+      "note": "Requires VK API key",
+      "data": [
+        "user_search",
+        "groups",
+        "posts"
+      ]
+    }
+  },
+  "scraping_methods": {
+    "truecaller_web": {
+      "url": "https://www.truecaller.com/",
+      "method": "web_lookup",
+      "data": "ФИО, компания, категория"
+    },
+    "2gis_scrape": {
+      "url": "https://2gis.ru/search",
+      "method": "web_scrape",
+      "data": "компании, контакты, сайты"
+    },
+    "yandex_scrape": {
+      "url": "https://www.yandex.ru/search",
+      "method": "dork_results",
+      "data": "все открытые результаты"
+    },
+    "avva_scrape": {
+      "url": "https://avva.ru/",
+      "note": "Публичные профили с информацией о людях"
+    }
+  },
+  "open_sources": {
+    "forums": [
+      "forums.moeginfo.com - финансовые форумы",
+      "pikabu.ru - социальный контент",
+      "reddit.com - обсуждения"
+    ],
+    "databases": [
+      "haveibeenpwned.com - утечки БД",
+      "dehashed.com - утечённые данные",
+      "leakpeek.com - поиск по компании/email"
+    ],
+    "github": [
+      "github.com/search?q=%2B79182469659 - поиск в кодах",
+      "утечки паспортных данных и конфиг-файлов"
+    ],
+    "documents": [
+      "Яндекс.Диск - публичные папки",
+      "Google Drive - открытые документы",
+      "Документы с номерами телефонов"
+    ]
+  }
+}

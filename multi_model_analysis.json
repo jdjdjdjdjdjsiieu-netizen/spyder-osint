@@ -1,0 +1,18 @@
+{
+  "phone": "+79182469659",
+  "analyses_by_model": {
+    "openai": "❌ OpenAI API ключ не найден. Установите OPENAI_API_KEY",
+    "anthropic": "❌ Anthropic API ключ не найден. Установите ANTHROPIC_API_KEY",
+    "groq": "❌ Groq API ключ не найден. Установите GROQ_API_KEY",
+    "ollama": "❌ Ollama не доступен. Запустите: ollama serve"
+  },
+  "timestamp": "{\"timestamp\": \"2026-03-22 16:21:18.411281\"}",
+  "available_models": {
+    "ollama": {
+      "name": "Ollama llama2",
+      "endpoint": "http://localhost:11434/api/generate",
+      "model": "llama2",
+      "status": "✗ Not running"
+    }
+  }
+}

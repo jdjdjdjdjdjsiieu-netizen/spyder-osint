@@ -1,0 +1,15 @@
+{
+  "phone": "+79182469659",
+  "normalized": "+79182469659",
+  "country_code": "7",
+  "country": "Russia",
+  "operator_code": "918",
+  "operator": "MegaFon",
+  "number_type": "Mobile",
+  "region": "St. Petersburg region",
+  "status": "framework_ready",
+  "query": "+79182469659",
+  "query_type": "phone",
+  "_enriched": true,
+  "_confidence": 0.4
+}

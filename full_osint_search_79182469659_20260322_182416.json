@@ -1,0 +1,252 @@
+{
+  "timestamp": "2026-03-22T18:24:14.288791",
+  "target": "+79182469659",
+  "name": null,
+  "search_types": {
+    "direct_search": {
+      "numverify": {
+        "service": "NumVerify",
+        "type": "DIRECT_SEARCH",
+        "status": "PENDING",
+        "data": null
+      },
+      "ipquality": {
+        "service": "IPQualityScore",
+        "type": "DIRECT_SEARCH",
+        "status": "SUCCESS",
+        "data": {
+          "success": false,
+          "message": "Invalid or unauthorized key. Please check the API key and try again.",
+          "request_id": "fZjQPLN0tS"
+        }
+      },
+      "truecaller": {
+        "service": "TrueCaller",
+        "type": "DIRECT_SEARCH",
+        "status": "PENDING",
+        "data": null
+      }
+    },
+    "reverse_search": {
+      "by_name": {
+        "type": "REVERSE_SEARCH_NAME",
+        "query": "Unknown Person",
+        "region": "Russia",
+        "sources": [
+          {
+            "name": "VKontakte",
+            "url": "https://vk.com/search?c[q]=Unknown%20Person&c[section]=people",
+            "status": "CHECK_MANUALLY"
+          },
+          {
+            "name": "Google Search",
+            "url": "https://www.google.com/search?q=\"Unknown%20Person\" phone",
+            "status": "CHECK_MANUALLY"
+          },
+          {
+            "name": "2GIS",
+            "url": "https://2gis.ru/search/Unknown%20Person",
+            "status": "CHECK_MANUALLY"
+          }
+        ]
+      },
+      "by_email": {
+        "type": "REVERSE_SEARCH_EMAIL",
+        "query": "unknown@example.com",
+        "findings": [
+          {
+            "service": "Have I Been Pwned",
+            "url": "https://haveibeenpwned.com/search?q=unknown%40example.com",
+            "type": "BREACH_CHECK",
+            "accessible": true
+          },
+          {
+            "service": "Email Reverse Lookup",
+            "url": "https://www.google.com/search?q=\"unknown%40example.com\"",
+            "type": "GENERAL_SEARCH",
+            "accessible": true
+          },
+          {
+            "service": "Social Media Discovery",
+            "queries": [
+              "site:vk.com unknown@example.com",
+              "site:instagram.com unknown",
+              "site:twitter.com unknown"
+            ],
+            "type": "SOCIAL_SEARCH"
+          }
+        ]
+      },
+      "by_address": {
+        "type": "REVERSE_SEARCH_ADDRESS",
+        "query": "Russia, St. Petersburg",
+        "sources": [
+          {
+            "name": "Yandex.Maps",
+            "url": "https://yandex.ru/maps/?text=Russia%2C%20St.%20Petersburg",
+            "data": "Organizations, phones, addresses"
+          },
+          {
+            "name": "2GIS",
+            "url": "https://2gis.ru/search/Russia%2C%20St.%20Petersburg",
+            "data": "Business phone numbers, contacts"
+          },
+          {
+            "name": "Google Maps",
+            "url": "https://www.google.com/maps/search/Russia%2C%20St.%20Petersburg",
+            "data": "Nearby businesses with phones"
+          },
+          {
+            "name": "Rosreestr",
+            "url": "https://www.rosreestr.ru/",
+            "data": "Property information",
+            "requires": "Manual search by address"
+          }
+        ]
+      }
+    },
+    "dns_search": {
+      "megafon_dns": {
+        "type": "DNS_LOOKUP",
+        "domain": "megafon.ru",
+        "records": {
+          "A": [
+            "178.177.13.149"
+          ]
+        },
+        "status": "SUCCESS"
+      },
+      "reverse_dns": {
+        "type": "REVERSE_DNS_LOOKUP",
+        "ip": "8.8.8.8",
+        "hostname": "dns.google",
+        "status": "SUCCESS",
+        "aliases": [],
+        "addresses": [
+          "8.8.8.8"
+        ]
+      }
+    },
+    "whois_search": {
+      "megafon_whois": {
+        "type": "WHOIS_LOOKUP",
+        "domain": "megafon.ru",
+        "status": "ERROR",
+        "data": null,
+        "error": "[Errno 2] No such file or directory: 'whois'"
+      }
+    },
+    "open_databases": {
+      "type": "OPEN_DATABASE_SEARCH",
+      "phone": "+79182469659",
+      "accessible_sources": [
+        {
+          "database": "DeHashed",
+          "url": "https://www.dehashed.com/search?query=%2B79182469659",
+          "description": "Leaked databases search",
+          "access": "WEB_SEARCH"
+        },
+        {
+          "database": "LeakedSource",
+          "url": "https://www.leakedsource.ru/",
+          "description": "Russian leaks database",
+          "search_method": "Manual search by phone"
+        },
+        {
+          "database": "Have I Been Pwned",
+          "url": "https://haveibeenpwned.com/search?q=%2B79182469659",
+          "description": "Password breach search",
+          "access": "WEB_SEARCH"
+        }
+      ],
+      "exposed_russian_dbs": [
+        {
+          "name": "MegaFon subscriber leak",
+          "records": "Millions of phone numbers",
+          "status": "Known leak in underground forums"
+        },
+        {
+          "name": "Rostelecom database",
+          "records": "Bell company customer data",
+          "status": "Partial exposure on forum.xss.is"
+        },
+        {
+          "name": "Russian government ID DB",
+          "records": "Passport numbers with phones",
+          "status": "Reported in security advisories"
+        }
+      ]
+    },
+    "social_media": {
+      "type": "SOCIAL_MEDIA_SEARCH",
+      "phone": "+79182469659",
+      "platforms": [
+        {
+          "platform": "VKontakte",
+          "search_url": "https://vk.com/search?c[q]=%2B79182469659",
+          "description": "Direct phone search"
+        },
+        {
+          "platform": "Telegram",
+          "search_method": "Manual search in contacts or @bot search",
+          "note": "Requires direct access or saved contact"
+        },
+        {
+          "platform": "WhatsApp",
+          "search_method": "Add to contacts and check profile",
+          "url": "https://web.whatsapp.com/",
+          "note": "Requires web.whatsapp.com access"
+        },
+        {
+          "platform": "Twitter",
+          "search_url": "https://twitter.com/search?q=%2B79182469659",
+          "description": "Phone number search"
+        },
+        {
+          "platform": "LinkedIn",
+          "search_url": "https://www.linkedin.com/search/results/all/?keywords=%2B79182469659",
+          "description": "Professional network search"
+        }
+      ]
+    },
+    "google_dorks": {
+      "type": "GOOGLE_DORK_SEARCH",
+      "phone": "+79182469659",
+      "queries": [
+        {
+          "dork": "\"+79182469659\"",
+          "url": "https://www.google.com/search?q=%22%2B79182469659%22"
+        },
+        {
+          "dork": "\"+79182469659\" passport",
+          "url": "https://www.google.com/search?q=%22%2B79182469659%22%20passport"
+        },
+        {
+          "dork": "\"+79182469659\" ИНН",
+          "url": "https://www.google.com/search?q=%22%2B79182469659%22%20%D0%98%D0%9D%D0%9D"
+        },
+        {
+          "dork": "site:2gis.ru \"+79182469659\"",
+          "url": "https://www.google.com/search?q=site%3A2gis.ru%20%22%2B79182469659%22"
+        },
+        {
+          "dork": "site:hh.ru \"+79182469659\"",
+          "url": "https://www.google.com/search?q=site%3Ahh.ru%20%22%2B79182469659%22"
+        },
+        {
+          "dork": "site:avvo.ru \"+79182469659\"",
+          "url": "https://www.google.com/search?q=site%3Aavvo.ru%20%22%2B79182469659%22"
+        },
+        {
+          "dork": "filetype:pdf \"+79182469659\"",
+          "url": "https://www.google.com/search?q=filetype%3Apdf%20%22%2B79182469659%22"
+        },
+        {
+          "dork": "filetype:xlsx \"+79182469659\"",
+          "url": "https://www.google.com/search?q=filetype%3Axlsx%20%22%2B79182469659%22"
+        }
+      ]
+    }
+  },
+  "total_sources": 0
+}
